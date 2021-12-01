@@ -1,0 +1,18 @@
+1. Jelaskan apa itu service? apa yang membedakannya dengan sebuah class?
+2. Jelaskan apa itu urutan dalam melakukan routing?
+
+Jawab :
+1. Angular Service adalah cara yang bagus untuk berbagi informasi di antara kelas-kelas yang tidak saling mengenal, karena 
+kelas yang dibentuk dari Angular Service bersifat global atau dapat digunakan di semua komponen dan modul.
+Perbedaanya dengan kelas adalah  di dalam kelas kita mampu membuat method atau fungsi sedangkan service yang menghubungkan 
+method atau fungsi tersebut agar bisa dipakai oleh kelas lain.
+
+2. 
+1. Buat file pada project angular dengan nama app-routing.module.ts 
+2. Lalu di dalam app-routing.module.ts kita bisa mengatur path route yang kita mau. Buat const routes kita bisa menentukan
+url dan component mana yang mau ditampilkan.
+3. Setelah membuat file app-routing.module.ts, kita perlu melakukan import di app.module.ts yaitu AppRoutingModule dan 
+routingComponents agar dapat digunakan di seluruh component yang telah terbentuk di project angular kita. routingComponents 
+dibuat untuk menyimpan component apa saja yang mau kita routing sehingga tidak perlu diimport satu persatu ke dalam file 
+app.module.ts.
+4. Pada file app.component.html perlu kita berikan tag route-outlet sehingga route tersebut dapat berfungsi sesuai yang diinginkan
